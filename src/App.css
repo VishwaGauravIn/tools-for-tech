@@ -44,15 +44,14 @@ body{
   text-decoration: none;
 }
 .big-box{
-  /* max-width: 60rem;
-  min-width: 17rem; */
-  position:relative;
-  left: 15%;
-  right:15%;
-  padding-right: 5%;
+  max-width: 60rem;
+  min-width: 0;
   margin-top: 2vh;
   margin-bottom: 2vh;
   /* margin-left: 14.5vw; */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0%);
 }
 .headingLogo{
   margin-top: 20px;

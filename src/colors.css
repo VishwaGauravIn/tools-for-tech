@@ -1,90 +1,90 @@
 .bg-color-cyan{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background-color: #03C4A1;
   }
   .bg-color-pink{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background-color: #C62A88;
   }
   .bg-color-darkblue{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background-color: #1E5F74;
   }
   .bg-color-darkgold{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background-color: #FA7D09;
   }
   .bg-color-orange{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background-color: #FF4301 ;
   }
   .bg-gradient-1{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
   }
   .bg-gradient-2{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
   }
   .bg-gradient-3{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
   }
   .bg-gradient-4{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
   }
   .bg-gradient-5{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
   }
   .bg-gradient-6{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
   }
   .bg-gradient-7{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
   }
   .bg-gradient-8{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
   }
   .bg-gradient-9{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
   }
   .bg-gradient-10{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
   }
   .bg-gradient-11{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
   }
   .bg-gradient-12{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
   }
   .bg-gradient-13{
-    border-radius: 3vh;
+    border-radius: 18px;
     width: 18rem;
     background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
   }

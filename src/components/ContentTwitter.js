@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './Card';
+
 /*
 Params-
 color:
@@ -9,6 +10,7 @@ urlLink:
 */
 
 // Twitter Tools
+
 
 export default function ContentTwitter(params) {
     return(
