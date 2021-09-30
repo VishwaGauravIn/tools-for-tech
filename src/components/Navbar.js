@@ -1,7 +1,9 @@
 import React from 'react'
-export default function Navbar(){
+import ContentTwitter from './ContentTwitter';
+
+
+function Navbar(){
     return(
-        
         <>
         <nav className="navbar navbar-expand-lg navbar-dark bg-color-purple">
         <div className="container-fluid">
@@ -20,7 +22,7 @@ export default function Navbar(){
                 </a>
                 <ul className="dropdown-menu bg-color-purple" aria-labelledby="navbarDropdownMenuLink">
                     <li><a className="dropdown-item text-color-white" href="/">Twitter</a></li>
-                    <li><a className="dropdown-item text-color-white" href="/" onClick="instagram()">Instagram</a></li>
+                    <li><a className="dropdown-item text-color-white" href="/">Instagram</a></li>
                     <li><a className="dropdown-item text-color-white" href="/">WhatsApp</a></li>
                 </ul>
                 </li>
@@ -31,3 +33,4 @@ export default function Navbar(){
         </>
     );
   }
+  export default Navbar;

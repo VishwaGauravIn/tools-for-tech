@@ -1,7 +1,10 @@
 import './App.css';
-import ContentTwitter from './components/ContentTwitter';
-import Navbar from './components/Navbar';
 import Masonry from 'masonry-layout';
+import Navbar from './components/Navbar';
+import ContentTwitter from './components/ContentTwitter';
+import ContentWhatsapp from './components/ContentWhatsapp';
+
+
 // Use caraousal for home
 window.onload =() => {
   const grid = document.querySelector('.grid');
@@ -10,8 +13,9 @@ window.onload =() => {
 function App() {
   return (
     <>
-    <Navbar></Navbar>
-    <ContentTwitter></ContentTwitter>
+    <Navbar/>
+    {/* <ContentTwitter/> */}
+    <ContentWhatsapp/>
     </>
   );
 }

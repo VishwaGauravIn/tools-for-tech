@@ -12,7 +12,7 @@ urlLink:
 
 export default function ContentTwitter(params) {
     return(
-        <>
+        <div>
         <center>
             <img className="headingLogo" src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" width="200px" alt="Twitter Logo"/>
         </center>
@@ -24,9 +24,9 @@ export default function ContentTwitter(params) {
                 <Card color="bg-gradient-5" title="listr" description="Discover the best of Twitter lists. 100+ most interesting lists curated across trending domain. Dedicated timelines,Focus only on content & people that matter, ignore the unpleasant side." urlLink="https://www.listr.pro/"></Card>
                 <Card color="bg-gradient-6" title="Epic Jobs" description="Epic Jobs helps you find job opportunities and helps you learn more about the people behind them via curated tweets, video introductions, interviews, and office tours." urllink="https://epicjobs.co/" ></Card>
                 <Card color="bg-gradient-7" title="Typefully" description="Typefully is a distraction-free editor to write and publish condensed ideas. See a live-preview of your thread while you write it, save multiple drafts, schedule, and publish in a focused environment." urlLink="https://typefully.app/"></Card>
-            
-
+                <Card color="bg-gradient-8" title="RevSync" description="RevSync syncs your Twitter newsletter subscribers to your existing newsletter tool. Your followers can easily subscribe on Twitter, and you can keep using the tools you love." urlLink="https://www.revsync.io/"></Card>
+                <Card color="bg-gradient-9" title="RiteTag" description="No idea which hashtags to use? Get instant hashtag suggestions for images and texts on desktop and mobile. Based on real time hashtag engagement." urlLink="https://ritetag.com/"></Card>
         </div>
-        </> 
+        </div>
     );
 }
