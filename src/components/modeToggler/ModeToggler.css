@@ -1,0 +1,18 @@
+.whitemodeButton{
+    size: 60px 60px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    background-color: transparent;
+    border-color: white;
+}
+.hover:hover{
+    background-color: blue;
+    transform: scale(1.11);
+}
+.darkmodeButton{
+    size: 60px 60px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: transparent;
+    border-color: white;
+}

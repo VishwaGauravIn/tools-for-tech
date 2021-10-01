@@ -1,5 +1,4 @@
 import React from 'react'
-import ContentTwitter from './ContentTwitter';
 
 
 function Navbar(){
