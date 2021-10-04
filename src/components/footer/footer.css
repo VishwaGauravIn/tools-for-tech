@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.foo{
+    margin-top: 20px;
+    color:honeydew;
+    opacity: 0.4;
+    display: inline-block;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-bottom: 2px;
+    font-size: 20px;
+}
+.foo:hover{
+    opacity: 0.8;
+}
+
+.footer-text{
+    display: inline-block;
+    color:honeydew;
+    margin-top: 3px;
+    margin-left: 4px;
+    border-radius: 20px;
+    background-color: #ff2e62f1;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: max-content;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/* Animation Element - On Hold*/
+
+/* .pseudo-ele{
+    visibility: hidden;
+    color:honeydew;
+    opacity: 0.8;
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+}
+
+@keyframes animate {
+    from{visibility: visible; width: 0px;}
+    50%{width: 100px}
+    to{visibility: hidden; width: 0px;}
+} */

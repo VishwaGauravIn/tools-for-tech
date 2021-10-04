@@ -1,10 +1,12 @@
 import './App.css';
 import Masonry from 'masonry-layout';
 import Navbar from './components/Navbar';
-import ContentTwitter from './components/ContentTwitter';
-import ContentWhatsapp from './components/ContentWhatsapp';
 import './components/Scroller.css';
 import NavBarVG from './components/navbar/NavbarVG';
+import Footer from './components/footer/Footer';
+import ContentTwitter from './components/ContentTwitter';
+import ContentWhatsapp from './components/ContentWhatsapp';
+import ContentInstagram from './components/ContentInstagram';
 
 // Use caraousal for home
 
@@ -22,8 +24,10 @@ function App() {
     <Navbar/>
     {/* <ModeToggler/> */}
 
-    <ContentTwitter/>
-    <ContentWhatsapp/>
+    {/* <ContentTwitter/> */}
+    {/* <ContentWhatsapp/> */}
+    <ContentInstagram/>
+    <Footer/>
     </>
   );
 }
