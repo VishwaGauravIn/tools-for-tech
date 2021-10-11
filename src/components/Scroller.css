@@ -12,6 +12,7 @@
     background-color: #282c34;
 }
 
+/* default color, border color to match body bg and give some space*/
 ::-webkit-scrollbar-thumb{
     transform-style: preserve-3d;
     background-color: #ff2e6285;
@@ -20,10 +21,12 @@
     border-style: solid;
 }
 
+/* When you hover mouse on it */
 ::-webkit-scrollbar-thumb:hover{
     background-color: #ff2e62cc;
 }
 
+/* basically onClick */
 ::-webkit-scrollbar-thumb:active {
     background-color: #ff2e62f1;
 }
