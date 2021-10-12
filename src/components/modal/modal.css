@@ -15,10 +15,10 @@
   height: 20rem;
   background-color: #444444;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  border-style: hidden; /* Earlier it was solid */
+  border-style: solid;
   border-color: #ededed;
   box-shadow: 0 0 0 0.5rem #346751;
-  animation: fadeIn 1s;
+  animation: fadeIn 0.2s;
 }
 .fullscreen-container {
   position: fixed;
@@ -42,6 +42,7 @@
   background-color: rgb(90, 90, 90);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   animation: fadeIn 1s;
+  box-shadow: 4px 4px #888888;
 }
 @keyframes fadeIn {
   0% {
@@ -82,8 +83,22 @@
   border-bottom-left-radius: 40px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
+  z-index: 4;
+  box-shadow: -1px 0 2px #e8bd70;
 }
 .modal-body-button:hover {
+  background-color: #346751;
+  transform: scale(1.01);
+}
+.modal-body-button:active + .modal-body-button:focus,
+.modal-body-button:checked + .modal-body-button:focus,
+.modal-body-button.active:focus,
+.modal-body-button:active:focus,
+.show > .modal-body-button.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem #31644e;
+}
+.modal-body-button:focus {
+  box-shadow: 0 0 0 0.25rem #31644e;
   background-color: #346751;
   transform: scale(1.01);
 }
@@ -97,8 +112,7 @@
   margin-left: -1rem;
 }
 .modal-btn-4 {
-  font-size: 36px;
-  width: 13rem;
+  width: 12rem;
   height: 50px;
   margin-left: -2rem;
   /* border-radius: 10% 20% 95% 36% / 30% 30% 95% 90% ; */
@@ -109,22 +123,22 @@
   color: #e8bd70;
 }
 .modal-btn-4:hover {
-  fill: #ededed;
-  border-color: #ededed;
-  color: #ededed;
+  color: #222831;
+  transition: 0.2s ease-in-out;
+  background-color: #e8bd70;
 }
 .modal-btn-4:focus {
-  fill: #ededed;
-  border-color: #ededed;
-  color: #ededed;
+  color: #222831;
+  transition: 0.2s ease-in-out;
+  background-color: #e8bd70;
+  box-shadow: 0 0 0 0.25rem #ffa600;
 }
-.donate-text {
-  margin-top: -7px;
-}
-.donate-heart {
-  margin-top: 8px;
-  margin-left: -100px;
-  vertical-align: top;
+.modal-btn-4:active + .modal-btn-4:focus,
+.modal-btn-4:checked + .modal-btn-4:focus,
+.modal-btn-4.active:focus,
+.modal-btn-4:active:focus,
+.show > .modal-btn-4.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem #ffa600;
 }
 
 .modal-btn-5 {
@@ -145,15 +159,66 @@
 .modal-btn-5:hover {
   transform: scale(1.08);
 }
-.modal-body-button:active + .modal-body-button:focus,
-.modal-body-button:checked + .modal-body-button:focus,
-.modal-body-button.active:focus,
-.modal-body-button:active:focus,
-.show > .modal-body-button.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem #31644e;
+
+
+
+
+/* ````````````````````````````````````````````````````````
+                    TestZone Start @VG
+`````````````````````````````````````````````````````````*/
+
+.foreground, .midground, .background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  transform: translate3d(0,0,0); 
 }
-.modal-body-button:focus {
-  box-shadow: 0 0 0 0.25rem #31644e;
-  background-color: #346751;
-  transform: scale(1.01);
+
+.foreground {
+  animation: parallax_fg linear 40s infinite both;
+  margin-top: 120px;
+  background:  url(http://stash.rachelnabors.com/24ways2012/background_mountain5.png) 0 100% repeat-x;
+  z-index: -1;
 }
+
+@keyframes parallax_fg {  
+  0% { background-position: -3584px 100%;} 
+  100% {background-position: 0 100%; } 
+}
+@keyframes parallax_mg {  
+  0% { background-position: -3000px 100%;} 
+  100% {background-position: 0 100%; } 
+}
+
+.background {
+  background-image:
+    url(http://stash.rachelnabors.com/24ways2012/background_mountain5.png),
+    url(http://stash.rachelnabors.com/24ways2012/background_mountain4.png),
+    url(http://stash.rachelnabors.com/24ways2012/background_mountain3.png),
+    url(http://stash.rachelnabors.com/24ways2012/background_mountain2.png),
+    url(http://stash.rachelnabors.com/24ways2012/background_mountain1.png);
+    
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  z-index: -2;
+  animation: parallax_bg linear 40s infinite;
+}
+.clouds{
+  background: url(https://www.kindpng.com/picc/m/430-4308476_white-stars-png-beige-transparent-png.png);
+  position: absolute;
+  z-index: -3;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  transform: translate3d(0,0,0);
+  animation: parallax_bg linear 400s infinite; 
+}
+@keyframes parallax_bg {
+  100% { background-position-x: 2400px, 2000px, 1800px, 1600px, 1200px;}
+}
+
+/* ````````````````````````````````````````````````````````
+                    TestZone End @VG
+`````````````````````````````````````````````````````````*/

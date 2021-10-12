@@ -1,26 +1,36 @@
 import "./App.css";
-import Masonry from "masonry-layout";
 import "./components/Scroller.css";
+import Masonry from 'masonry-layout'
 import NavBarVG from "./components/navbar/NavbarVG";
 import Footer from "./components/footer/Footer";
+import { useState } from "react";
 import ContentTwitter from "./components/ContentTwitter";
 import ContentWhatsapp from "./components/ContentWhatsapp";
 import ContentInstagram from "./components/ContentInstagram";
-import { Modal } from "./components/modal/Modal";
 
 // Use caraousal for home
-
-window.onload = () => {
-  const grid = document.querySelector(".grid");
-  const masonry = new Masonry(grid);
-
-  const grid2 = document.querySelector(".grid2");
-  const masonry2 = new Masonry(grid2);
+/*
+While adding any new Tech Component for ex: Twitter, Snapchat etc
+in App.js > define bodyComponent, pass it's value in NavBarVG
+in NavBarVG > add Navigation bar Dropdown (for ex: add Snapchat in dropdown menu), and define onClick function
+*/
+const bodyComponents = {
+  a: <ContentTwitter/>,
+  b: <ContentWhatsapp/>,
+  c: <ContentInstagram/>
 };
+function MasonryInit(){
+setTimeout(
+function(){
+  const grid2 = document.querySelector(".grid2");
+        const masonry = new Masonry(grid2);
+},10);
+}
 function App() {
+  const [selected, setSelected] = useState(null);
   return (
     <>
-      <div class="white">
+      {/* <div class="white">
         <div class="squares">
           <div class="square"></div>
           <div class="square"></div>
@@ -33,12 +43,14 @@ function App() {
           <div class="square"></div>
           <div class="square"></div>
         </div>
-      </div>
-      <NavBarVG />
+      </div> */}
+      <NavBarVG 
+      twitter={() => {setSelected("a"); MasonryInit();}}
+      whatsapp={() => {setSelected("b"); MasonryInit();}}
+      instagram={() => {setSelected("c"); MasonryInit();}}
+      />
       {/* <ModeToggler/> */}
-      <ContentTwitter/>
-      <ContentWhatsapp/>
-      {/* <ContentInstagram /> */}
+      <div className="grid">{selected && bodyComponents[selected]}</div>
       <Footer />
     </>
   );

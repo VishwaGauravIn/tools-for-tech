@@ -18,7 +18,7 @@ export default function ContentTwitter(params) {
         <center>
             <img className="headingLogo" src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" width="200px" alt="Twitter Logo"/>
         </center>
-        <div className="big-box grid">
+        <div className="big-box grid2">
                 <Card color="bg-gradient-1" title="BlackMagic.so" description="It is a Twitter growth tool using forbidden magic and Twitter API. Create dynamic banners, profile pic and many more." urlLink="https://blackmagic.so/"></Card>
                 <Card color="bg-gradient-2" title="Poet.so" description="Capture and share twitter posts as beautiful images." urlLink="https://poet.so/"></Card>
                 <Card color="bg-gradient-3" title="What to Tweet" description="Never again run out of tweet ideas. Get personalized Tweet inspirations." urlLink="https://whattotweet.com/"></Card>
