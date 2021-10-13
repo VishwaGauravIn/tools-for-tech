@@ -6,7 +6,7 @@ import Modal from "../modal/Modal";
 
 const spaceVal = " ";
 
-function NavbarVG({twitter,whatsapp,instagram}) {
+function NavbarVG({twitter,whatsapp,instagram,reddit,snapchat}) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -64,6 +64,16 @@ function NavbarVG({twitter,whatsapp,instagram}) {
                   <li>
                     <a className="dropdown-item dropdown-item-custom" onClick={instagram}>
                       Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item dropdown-item-custom" onClick={reddit}>
+                      Reddit
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item dropdown-item-custom" onClick={snapchat}>
+                      Snapchat
                     </a>
                   </li>
                   <li>

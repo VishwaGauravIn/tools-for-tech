@@ -8,6 +8,8 @@ import ContentTwitter from "./components/ContentTwitter";
 import ContentWhatsapp from "./components/ContentWhatsapp";
 import ContentInstagram from "./components/ContentInstagram";
 import AnimateBg from "./components/AnimateBg"
+import ContentReddit from "./components/ContentReddit";
+import ContentSnapchat from "./components/ContentSnapchat";
 
 // Use caraousal for home
 /*
@@ -18,7 +20,9 @@ in NavBarVG > add Navigation bar Dropdown (for ex: add Snapchat in dropdown menu
 const bodyComponents = {
   a: <ContentTwitter/>,
   b: <ContentWhatsapp/>,
-  c: <ContentInstagram/>
+  c: <ContentInstagram/>,
+  d: <ContentReddit/>,
+  e: <ContentSnapchat/>
 };
 window.onload = function (){
   AnimateBg();
@@ -37,6 +41,8 @@ function App() {
       twitter={() => {setSelected("a");}}
       whatsapp={() => {setSelected("b");}}
       instagram={() => {setSelected("c");}}
+      reddit={() => {setSelected("d");}}
+      snapchat={() => {setSelected("e");}}
       />
       {/* <ModeToggler/> */}
       <div className="grid" onLoad={MasonryInit}>{selected && bodyComponents[selected]}</div>
