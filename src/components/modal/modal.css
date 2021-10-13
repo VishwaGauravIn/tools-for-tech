@@ -26,8 +26,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgb(90, 90, 90);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), #12121230);
+  background: #474747; /* rgb(90, 90, 90) */
+  background-image: linear-gradient(90deg, #121212 0%, rgb(40, 44, 52) 72%);
   z-index: 9999;
   animation: fadeIn 1s;
 }
@@ -85,6 +85,7 @@
   margin-bottom: 10px;
   z-index: 4;
   box-shadow: -1px 0 2px #e8bd70;
+  
 }
 .modal-body-button:hover {
   background-color: #346751;
@@ -159,66 +160,3 @@
 .modal-btn-5:hover {
   transform: scale(1.08);
 }
-
-
-
-
-/* ````````````````````````````````````````````````````````
-                    TestZone Start @VG
-`````````````````````````````````````````````````````````*/
-
-.foreground, .midground, .background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0; left: 0;
-  transform: translate3d(0,0,0); 
-}
-
-.foreground {
-  animation: parallax_fg linear 40s infinite both;
-  margin-top: 120px;
-  background:  url(http://stash.rachelnabors.com/24ways2012/background_mountain5.png) 0 100% repeat-x;
-  z-index: -1;
-}
-
-@keyframes parallax_fg {  
-  0% { background-position: -3584px 100%;} 
-  100% {background-position: 0 100%; } 
-}
-@keyframes parallax_mg {  
-  0% { background-position: -3000px 100%;} 
-  100% {background-position: 0 100%; } 
-}
-
-.background {
-  background-image:
-    url(http://stash.rachelnabors.com/24ways2012/background_mountain5.png),
-    url(http://stash.rachelnabors.com/24ways2012/background_mountain4.png),
-    url(http://stash.rachelnabors.com/24ways2012/background_mountain3.png),
-    url(http://stash.rachelnabors.com/24ways2012/background_mountain2.png),
-    url(http://stash.rachelnabors.com/24ways2012/background_mountain1.png);
-    
-  background-repeat: repeat-x;
-  background-position: 0 100%;
-  z-index: -2;
-  animation: parallax_bg linear 40s infinite;
-}
-.clouds{
-  background: url(https://www.kindpng.com/picc/m/430-4308476_white-stars-png-beige-transparent-png.png);
-  position: absolute;
-  z-index: -3;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0; left: 0;
-  transform: translate3d(0,0,0);
-  animation: parallax_bg linear 400s infinite; 
-}
-@keyframes parallax_bg {
-  100% { background-position-x: 2400px, 2000px, 1800px, 1600px, 1200px;}
-}
-
-/* ````````````````````````````````````````````````````````
-                    TestZone End @VG
-`````````````````````````````````````````````````````````*/

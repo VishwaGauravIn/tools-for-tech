@@ -82,7 +82,7 @@ function NavbarVG({twitter,whatsapp,instagram}) {
               type="submit"
               onClick={() => setIsOpen(true)}
               data-toggle="tooltip"
-              title="Click here to contribute. If you have low end device, Your device may lag due to heavy animation used"
+              title="Your every Contribution is Valuable to us"
             >
               Contribute {spaceVal}
               <img

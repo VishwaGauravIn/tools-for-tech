@@ -4,6 +4,7 @@ import React from "react";
 import "./modal.css";
 import { useState } from "react";
 import Form from "./form/Form";
+import AnimateBg from "../AnimateBg";
 
 let spaceVal = " ";
 
@@ -19,7 +20,8 @@ export default function Modal({ open, onClose }) {
 
   return (
     <>
-      <div className="fullscreen-container">
+      <div className="fullscreen-container" onLoad={AnimateBg}>
+      <canvas id="canvas"></canvas>
         <div className="pseudo-modal">
           <button className="modal-btn-5" onClick={onClose}>
             <svg
@@ -97,11 +99,7 @@ export default function Modal({ open, onClose }) {
             {/* <button className="modal-btn-close" onClick={onClose}>Close Modal</button>   */}
           </div>
         </div>
-        <div class="foreground"></div>
-        <div class="midground">
-        </div>
-        <div className="clouds"></div>
-        <div class="background"></div>
+        
       </div>
     </>
   );

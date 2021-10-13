@@ -9,12 +9,12 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgb(90, 90, 90);
+    background: #474747;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), #12121230);
     z-index: 9999;
   }
 .new-form-shape{
-    width: 50vw;
+    width: 80vw;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -35,7 +35,7 @@ body{
         height: 20rem;
     }
     100%{
-        width: 50vw;
+        width: 80vw;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -110,7 +110,7 @@ body{
     margin-top: -15px;
 }
 .form-input{
-    width: 46vw;
+    width: 38vh;
     margin-bottom: 10px;
     height: 6vh;
     border-radius: 20px;
@@ -124,7 +124,8 @@ body{
     border-style: solid;
 }
 .form-input:focus{
-    box-shadow: 0 0 0 4px #e8bd70;
+    border-style: hidden;
+    box-shadow: 0 0 0 4px white;
     transform: scale(1.01);
 }
 .form-input-description{
@@ -159,117 +160,6 @@ body{
     background-color: #e8bd70;
     box-shadow: 0 0 0 0.25rem #ffa600;
 }
-.animated-circles{
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    z-index: -69;
-    margin-left: 20px;
+.form-label{
+    color: rgb(182, 182, 182);
 }
-.animated-circle{
-    display: inline-block;
-    margin-top: 100vh;
-    width: 88px;
-    height: 88px;
-    border-radius: 50px;
-    margin-top: 12px;
-    margin-right: 60px;
-    background-color: red;
-    -webkit-filter: blur(2.5px);
-    -webkit-animation: squares 19.5s linear infinite;
-    animation: squares 19.5s linear infinite;
-    -webkit-animation-delay: 2s;
-    opacity: 0;
-}
-.animated-circle:nth-child(2){
-    border-radius: 0px;
-    background-color: yellow;
-    animation-delay: 1s;
-    -webkit-animation-duration: 13s;
-    animation-duration: 13s;
-}
-.animated-circle:nth-child(3){
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    background-color: lightgreen;
-    animation-delay: 3s;
-    -webkit-animation-duration: 12s;
-    animation-duration: 12s;
-}
-.animated-circle:nth-child(4){
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
-    width: 120px;
-    height: 120px;
-    background-color: blue;
-    animation-delay: 1s;
-    -webkit-animation-duration: 27s;
-    animation-duration: 27s;
-}
-.animated-circle:nth-child(5){
-    border-radius: 0% 100% 70% 30% / 0% 30% 70% 100% ;
-    background-color: pink;
-    animation-delay: 1.5s;
-    -webkit-animation-duration: 7s;
-    animation-duration: 16s;
-}
-.animated-circle:nth-child(6){
-    width: 72px;
-    height: 72px;
-    border-radius: 0px;
-    background-color: orchid;
-    animation-delay: 1s;
-    -webkit-animation-duration: 10s;
-    animation-duration: 10s;
-}
-.animated-circle:nth-child(7){
-    border-radius: 0% 100% 0% 100% / 0% 100% 0% 100% ;
-    background-color: brown;
-    animation-delay: 4s;
-    -webkit-animation-duration: 13s;
-    animation-duration: 13s;
-}
-.animated-circle:nth-child(8){
-    width: 40px;
-    height: 40px;
-    border-radius: 100% 0% 49% 51% / 100% 100% 0% 0% ;
-    background-color: purple;
-    animation-delay: 2.5s;
-    -webkit-animation-duration: 20s;
-    animation-duration: 20s;
-}
-.animated-circle:nth-child(9){
-    background-color: peru;
-    animation-delay: 1.5s;
-    -webkit-animation-duration: 20s;
-    animation-duration: 20s;
-}
-.animated-circle:nth-child(10){
-    background-color: lightgreen;
-    animation-delay: 5s;
-    -webkit-animation-duration: 13s;
-    animation-duration: 13s;
-}
-@-webkit-keyframes squares {
-    from {
-      -webkit-transform: translateY(100vh) rotate(-50deg);
-              transform: translateY(100vh) rotate(-50deg);
-              opacity: 0.6;
-    }
-    to {
-      -webkit-transform: translateY(calc(-100vh + -100%)) rotate(20deg);
-              transform: translateY(calc(-100vh + -100%)) rotate(20deg);
-    }
-  }
-  
-  @keyframes squares {
-    from {
-      -webkit-transform: translateY(100vh) rotate(-50deg);
-              transform: translateY(100vh) rotate(-50deg);
-              opacity: 0.6;
-    }
-    to {
-      -webkit-transform: translateY(calc(-100vh + -100%)) rotate(20deg);
-              transform: translateY(calc(-100vh + -100%)) rotate(20deg);
-    }
-  }

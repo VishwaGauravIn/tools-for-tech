@@ -7,6 +7,7 @@ import { useState } from "react";
 import ContentTwitter from "./components/ContentTwitter";
 import ContentWhatsapp from "./components/ContentWhatsapp";
 import ContentInstagram from "./components/ContentInstagram";
+import AnimateBg from "./components/AnimateBg"
 
 // Use caraousal for home
 /*
@@ -19,39 +20,28 @@ const bodyComponents = {
   b: <ContentWhatsapp/>,
   c: <ContentInstagram/>
 };
+window.onload = function (){
+  AnimateBg();
+}
 function MasonryInit(){
-setTimeout(
-function(){
   const grid2 = document.querySelector(".grid2");
         const masonry = new Masonry(grid2);
-},10);
 }
 function App() {
   const [selected, setSelected] = useState(null);
   return (
     <>
-      {/* <div class="white">
-        <div class="squares">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-        </div>
-      </div> */}
+    
+      
       <NavBarVG 
-      twitter={() => {setSelected("a"); MasonryInit();}}
-      whatsapp={() => {setSelected("b"); MasonryInit();}}
-      instagram={() => {setSelected("c"); MasonryInit();}}
+      twitter={() => {setSelected("a");}}
+      whatsapp={() => {setSelected("b");}}
+      instagram={() => {setSelected("c");}}
       />
       {/* <ModeToggler/> */}
-      <div className="grid">{selected && bodyComponents[selected]}</div>
+      <div className="grid" onLoad={MasonryInit}>{selected && bodyComponents[selected]}</div>
       <Footer />
+      <canvas id="canvas"></canvas>
     </>
   );
 }

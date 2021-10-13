@@ -6,9 +6,12 @@
 }
 .dropdown-menu-custom {
   background-color: #121212;
+  border-style: solid;
+  border-color: aliceblue;
 }
 .dropdown-item-custom {
   background-color: #121212;
+  color: white;
 }
 .btn-success-custom {
   background-color: #b42b51;
