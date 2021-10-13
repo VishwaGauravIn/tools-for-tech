@@ -26,7 +26,7 @@ body{
     border-color: #e8bd70;
     border-width: 0.25rem;
     animation: newShapeAppear 1s;
-    box-shadow: 4px 4px #888888;
+    box-shadow: 0px 0px 40px #000;
 }
 @keyframes newShapeAppear {
     0%{
@@ -122,8 +122,24 @@ body{
     padding-left: 8px;
     padding-right: 8px;
     border-style: solid;
+    box-shadow: 0px 0px 30px #000;
+}
+.form-input:hover{
+    animation: elongate 0.5s;
+}
+@keyframes elongate {
+    0%{
+        width: 38vh;
+    }
+    50%{
+        width: 40vh;
+    }
+    100%{
+        width: 38vh;
+    }
 }
 .form-input:focus{
+    width: 40vh;
     border-style: hidden;
     box-shadow: 0 0 0 4px white;
     transform: scale(1.01);
@@ -148,6 +164,7 @@ body{
     border-radius: 20px;
     border-style: solid;
     border-color: #e8bd70;
+    box-shadow: 0px 0px 30px #000;
 }
 .form-submit-btn:hover{
     color: #222831;
