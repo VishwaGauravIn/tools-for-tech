@@ -1,6 +1,6 @@
 // Copyright github.com/VishwaGauravIn - Reuse Allowed
 
-import React from 'react'
+import React from "react";
 /*
 required Params-
 color:
@@ -14,24 +14,26 @@ This card component needs Bootstrap css, App.css and colors.css to work properly
 */
 
 export default function Card(params) {
-    return(
-        <>
-        <div className="main grid-item">
-            <a href={params.urlLink} className="urlLinkCard">
-        <div className="card">
-            
-        <div className={params.color}>
-        
-        <div className="card-body">
-            <img src={params.logo} alt="" className="card-image" width="50px"/>
-            <h5 className="card-title">{params.title}</h5>
-            <p className="card-text">{params.description}</p>
-        
-        </div>
-        </div>
-        </div>
+  return (
+    <>
+      <div className="main grid-item">
+        <a href={params.urlLink} className="urlLinkCard">
+          <div className="card">
+            <div className={params.color}>
+              <div className="card-body">
+                <img
+                  src={params.logo}
+                  alt=""
+                  className="card-image"
+                  width="50px"
+                />
+                <h5 className="card-title">{params.title}</h5>
+                <p className="card-text">{params.description}</p>
+              </div>
+            </div>
+          </div>
         </a>
-        </div>
-        </>
-    );
+      </div>
+    </>
+  );
 }

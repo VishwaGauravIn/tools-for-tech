@@ -22,11 +22,11 @@ body{
     z-index: 3;
     background-color: #222831;
     border-radius: 20px;
-    border-style: solid;
-    border-color: #e8bd70;
+    border-style: hidden;
+    border-color: #4e5d72;
     border-width: 0.25rem;
     animation: newShapeAppear 1s;
-    box-shadow: 0px 0px 40px #000;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.431);
 }
 @keyframes newShapeAppear {
     0%{
@@ -43,8 +43,6 @@ body{
         z-index: 3;
         background-color: #222831;
         border-radius: 20px;
-        border-style: solid;
-        border-color: #e8bd70;
     }
 }
 @keyframes appearLate {
@@ -102,7 +100,7 @@ body{
 .form-title{
     margin-top: 4px;
     margin-left: 20px;
-    color: #e8bd70;
+    color: white;
     font-size: 30px;
 }
 .form-body{
@@ -114,8 +112,8 @@ body{
     margin-bottom: 10px;
     height: 6vh;
     border-radius: 20px;
-    background-color: #393E46;
-    border-color: #FFD369;
+    background: #4e5d72;
+    border-color: white;
     text-align: center;
     color: #EEEEEE;
     font-size: larger;
@@ -123,21 +121,9 @@ body{
     padding-right: 8px;
     border-style: solid;
     box-shadow: 0px 0px 30px #000;
+    outline: transparent;
 }
-.form-input:hover{
-    animation: elongate 0.5s;
-}
-@keyframes elongate {
-    0%{
-        width: 38vh;
-    }
-    50%{
-        width: 40vh;
-    }
-    100%{
-        width: 38vh;
-    }
-}
+
 .form-input:focus{
     width: 40vh;
     border-style: hidden;
@@ -154,7 +140,7 @@ body{
 }
 .form-submit-btn{
     display: block;
-    margin-top: -8px;
+    margin-top: -2px;
     margin-bottom: 10px;
     background-color: #222831;
     color: #e8bd70;

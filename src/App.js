@@ -10,6 +10,7 @@ import ContentInstagram from "./components/ContentInstagram";
 import AnimateBg from "./components/AnimateBg"
 import ContentReddit from "./components/ContentReddit";
 import ContentSnapchat from "./components/ContentSnapchat";
+import LoaderVG from "./components/loader/LoaderVG";
 
 // Use caraousal for home
 /*
@@ -32,20 +33,25 @@ function MasonryInit(){
         const masonry = new Masonry(grid2);
 }
 function App() {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState(null); //set it to a,b,c,d, or home for default value
+  const [loaderVisibility, slv] = useState(null)
+  const loaderAlgo = (contentVal) => {
+      if (contentVal != selected){
+        slv(true);
+      }
+  }
   return (
     <>
-    
-      
+      <div>{ loaderVisibility ? <LoaderVG /> : null }</div>
       <NavBarVG 
-      twitter={() => {setSelected("a");}}
-      whatsapp={() => {setSelected("b");}}
-      instagram={() => {setSelected("c");}}
-      reddit={() => {setSelected("d");}}
-      snapchat={() => {setSelected("e");}}
+      twitter={() => {setSelected("a");loaderAlgo("a")}}
+      whatsapp={() => {setSelected("b");loaderAlgo("b")}}
+      instagram={() => {setSelected("c");loaderAlgo("c")}}
+      reddit={() => {setSelected("d");loaderAlgo("d")}}
+      snapchat={() => {setSelected("e");loaderAlgo("e")}}
       />
       {/* <ModeToggler/> */}
-      <div className="grid" onLoad={MasonryInit}>{selected && bodyComponents[selected]}</div>
+      <div className="grid" onLoad={ () => {MasonryInit();setTimeout(function() {slv(false)}, 1000);}}>{selected && bodyComponents[selected]}</div>
       <Footer />
       <canvas id="canvas"></canvas>
     </>
