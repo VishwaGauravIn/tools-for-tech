@@ -90,9 +90,10 @@ export default function Modal({ open, onClose }) {
                     Commit on GitHub
                   </button>
                   <br />
+                  <a href="https://paypal.me/VishwaGauravIn">
                   <button className="modal-body-button modal-btn-4">
-                    Donate
-                  </button>
+                     Donate
+                  </button></a>
                 </div>
               </center>
             </div>
