@@ -1,0 +1,19 @@
+.home-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 9vw;
+    color: white;
+    width: max-content;
+}
+.home-desc{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+    width: max-content;
+    color: rgb(175, 175, 175);
+    margin-left: 2vw;
+}
+.home-about{
+    width: max-content;
+    display: inline-block;
+    margin-left: 4vw;
+    margin-top: 10vh;
+}

@@ -6,7 +6,7 @@ import Modal from "../modal/Modal";
 
 const spaceVal = " ";
 
-function NavbarVG({twitter,whatsapp,instagram,reddit,snapchat}) {
+function NavbarVG({home,twitter,whatsapp,instagram,reddit,snapchat}) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -29,7 +29,7 @@ function NavbarVG({twitter,whatsapp,instagram,reddit,snapchat}) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <a className="nav-link active" aria-current="page" onClick={home}>
                   Home
                 </a>
               </li>

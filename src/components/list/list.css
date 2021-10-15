@@ -1,0 +1,22 @@
+.list-main{
+    width: 20rem;
+    float: right;
+    margin-right: 20px;
+}
+.top-tools{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+.list-group-item{
+    background-color: #ffffff2c;
+    color: white;
+    border-style: hidden;
+}
+.list-img{
+    border-radius: 50px;
+    border-style: hidden;
+}
+.rounded-pill{
+    background-color: #b42b51;
+}

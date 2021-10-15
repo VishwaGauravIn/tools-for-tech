@@ -11,6 +11,7 @@ import AnimateBg from "./components/AnimateBg"
 import ContentReddit from "./components/ContentReddit";
 import ContentSnapchat from "./components/ContentSnapchat";
 import LoaderVG from "./components/loader/LoaderVG";
+import Home from "./components/home/Home";
 
 // Use caraousal for home
 /*
@@ -19,6 +20,7 @@ in App.js > define bodyComponent, pass it's value in NavBarVG
 in NavBarVG > add Navigation bar Dropdown (for ex: add Snapchat in dropdown menu), and define onClick function
 */
 const bodyComponents = {
+  home: <Home/>,
   a: <ContentTwitter/>,
   b: <ContentWhatsapp/>,
   c: <ContentInstagram/>,
@@ -33,7 +35,7 @@ function MasonryInit(){
         const masonry = new Masonry(grid2);
 }
 function App() {
-  const [selected, setSelected] = useState(null); //set it to a,b,c,d, or home for default value
+  const [selected, setSelected] = useState("home"); 
   const [loaderVisibility, slv] = useState(null)
   const loaderAlgo = (contentVal) => {
       if (contentVal != selected){
@@ -49,6 +51,7 @@ function App() {
       instagram={() => {setSelected("c");loaderAlgo("c")}}
       reddit={() => {setSelected("d");loaderAlgo("d")}}
       snapchat={() => {setSelected("e");loaderAlgo("e")}}
+      home={() => {setSelected("home");loaderAlgo("home")}}
       />
       {/* <ModeToggler/> */}
       <div className="grid" onLoad={ () => {MasonryInit();setTimeout(function() {slv(false)}, 1000);}}>{selected && bodyComponents[selected]}</div>
