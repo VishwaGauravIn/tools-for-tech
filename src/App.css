@@ -77,3 +77,25 @@ body{
   z-index: -1;
   opacity: 0.3;
 }
+
+/* For the sake of Responsiveness */
+@media only screen and (max-width: 600px) {
+  .big-box{
+    max-width: 60rem;
+    min-width: 0;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    /* margin-left: 14.5vw; */
+    /* position: relative; */
+    display: inline-block;
+    left: 15%;
+    transform: translate(0%,0%);
+  }
+  .main{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 17rem; /*17rem*/
+  }
+}

@@ -17,3 +17,23 @@
     margin-left: 4vw;
     margin-top: 10vh;
 }
+
+/* For the sake of Responsiveness */
+@media only screen and (max-width: 600px) {
+    .home-title{
+        font-size: 13vw;
+        width: max-content;
+    }
+    .home-desc{
+        font-family: "Montserrat", sans-serif;
+        font-size: 3vw;
+        width: max-content;
+        color: rgb(175, 175, 175);
+        margin-left: 1vw;
+    }
+    .home-about{
+        width: max-content;
+        margin-left: 4vw;
+        margin-top: 1vh;
+    }
+  }

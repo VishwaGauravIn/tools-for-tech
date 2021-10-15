@@ -21,3 +21,22 @@
 .rounded-pill{
     background-color: #b42b51;
 }
+
+/* For the sake of Responsiveness */
+@media only screen and (max-width: 600px) {
+    .list-main{
+        position: relative;
+        margin-top: 2vh;
+        margin-right: 0px;
+        width: 90vw;
+        float: none;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .list-group-item{
+        display: inline-block;
+        width: 90vw;
+        color: white;
+        border-style: hidden;
+    }
+}

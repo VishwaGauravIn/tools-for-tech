@@ -85,7 +85,6 @@
   margin-bottom: 10px;
   z-index: 4;
   box-shadow: -1px 0 2px #e8bd70;
-  
 }
 .modal-body-button:hover {
   background-color: #346751;
@@ -159,4 +158,56 @@
 }
 .modal-btn-5:hover {
   transform: scale(1.08);
+}
+
+/* For the sake of Responsiveness */
+@media only screen and (max-width: 600px) {
+  .parent-modal {
+    width: 16rem;
+    height: 18rem;
+  }
+  .pseudo-modal {
+    width: 19rem;
+    height: 21rem;
+  }
+  .modal-divider {
+    width: 12rem;
+  }
+  .modal-body-button {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .modal-btn-2 {
+    width: 13rem;
+    height: 50px;
+  }
+  .modal-btn-3 {
+    width: 12rem;
+    height: 50px;
+    margin-left: -0.7rem;
+  }
+  .modal-btn-4 {
+    width: 8rem;
+    height: 50px;
+    margin-left: -2rem;
+    font-size: 20px;
+    border-bottom-right-radius: 120px ;
+    border-top-left-radius: 120px;
+    margin-top: -5px;
+  }
+  .modal-btn-5 {
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -20px;
+    z-index: 9999999;
+  }
+  .modal-btn-501 {
+    margin-left: 270px;
+    margin-top: 40px;
+  }
+  .modal-btn-502 {
+    margin-top: 350px;
+    margin-left: 0px;
+  }
 }

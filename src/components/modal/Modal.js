@@ -71,7 +71,6 @@ export default function Modal({ open, onClose }) {
                 <hr className="modal-divider" />
               </center>
             </div>
-
             <div className="modal-body">
               <center>
                 <div className="modal-body-content"></div>
