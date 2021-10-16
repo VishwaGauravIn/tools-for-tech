@@ -7,6 +7,7 @@ export default function Form({ visibility, formInvisible }) {
   const [toolName,setToolName] = useState("");
   const [description,setDescription] = useState("");
 
+    // Form Logic Start
   const handleSubmit = (e) => {
     e.preventDefault();
     if (techName != "" && toolName != ""){
@@ -33,7 +34,7 @@ export default function Form({ visibility, formInvisible }) {
       }
     }
     }
-    
+      // Form Logic End
 
   if (!visibility) return null;
   return (
@@ -49,7 +50,7 @@ export default function Form({ visibility, formInvisible }) {
           <div className="close-circle yellow" />
           <h2 className="form-title appear-late">Add Your favourite tool:</h2>
           <div className="form-body appear-late">
-            <hr />
+            <hr className="form-hr"/>
             <center>
               <h5 className="form-label">Tech Name:</h5>
               <input

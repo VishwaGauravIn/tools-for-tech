@@ -23,7 +23,7 @@ function Footer(){
         <center>
             {/* <div className="pseudo-ele">{pseudoText1}</div> */}
             <div className="foo" /*onClick={JustAnimate}*/ >
-                <h2 className="foo">
+                <h2 className="footer">
                     {codeText} with 💛 by
                 <h2 className="footer-text">
                     Vishwa Gaurav 

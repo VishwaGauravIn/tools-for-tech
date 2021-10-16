@@ -19,6 +19,7 @@
 .btn-success-custom {
   background-color: #b42b51;
   border-style: none;
+  animation: contribute-animation 2s infinite;
 }
 .btn-success-custom:hover {
   background-color: #e63e6d;
@@ -32,6 +33,11 @@
 }
 .nav-btn-contribute {
   width: 22px;
+}
+@keyframes contribute-animation {
+  0%{margin-left: 0px;}
+  50%{transform: scale(1.02);}
+  100%{margin-left: 0px;}
 }
 .btn-check:active + .btn-success:focus,
 .btn-check:checked + .btn-success:focus,

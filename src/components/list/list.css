@@ -14,10 +14,44 @@
     color: white;
     border-style: hidden;
 }
+.list-group-item:hover{
+    animation: scaleLarge 0.5s;
+    transform: scale(1.04);
+    border-style: hidden;
+    background-color: rgba(97, 97, 97, 0.314);
+    
+}
+.list-no1{
+    background-color: #ec716385 ;
+}
+.list-no2{
+    background-color: #bb8fce80;
+}
+.list-no3{
+    background-color:  #5dade281;
+}
+.list-no1:hover{
+    background-color: #ec7163 ;
+}
+.list-no2:hover{
+    background-color: #bb8fce;
+}
+.list-no3:hover{
+    background-color: #5dade2;
+}
+@keyframes scaleLarge {
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.04);
+    }
+}
 .list-img{
     border-radius: 50px;
     border-style: hidden;
 }
+
 .rounded-pill{
     background-color: #b42b51;
 }
@@ -40,3 +74,13 @@
         border-style: hidden;
     }
 }
+a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .list-main{
+        margin-top: 1vh;
+        margin-right: 10px;
+    }
+  }

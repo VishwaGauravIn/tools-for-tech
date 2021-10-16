@@ -4,29 +4,22 @@ import Masonry from 'masonry-layout'
 import NavBarVG from "./components/navbar/NavbarVG";
 import Footer from "./components/footer/Footer";
 import { useState } from "react";
-import ContentTwitter from "./components/ContentTwitter";
-import ContentWhatsapp from "./components/ContentWhatsapp";
-import ContentInstagram from "./components/ContentInstagram";
+import ContentTwitter from "./components/content/ContentTwitter";
+import ContentWhatsapp from "./components/content/ContentWhatsapp";
+import ContentInstagram from "./components/content/ContentInstagram";
 import AnimateBg from "./components/AnimateBg"
-import ContentReddit from "./components/ContentReddit";
-import ContentSnapchat from "./components/ContentSnapchat";
+import ContentReddit from "./components/content/ContentReddit";
+import ContentSnapchat from "./components/content/ContentSnapchat";
 import LoaderVG from "./components/loader/LoaderVG";
 import Home from "./components/home/Home";
+import ContentYoutube from "./components/content/ContentYoutube";
 
-// Use caraousal for home
 /*
 While adding any new Tech Component for ex: Twitter, Snapchat etc
 in App.js > define bodyComponent, pass it's value in NavBarVG
 in NavBarVG > add Navigation bar Dropdown (for ex: add Snapchat in dropdown menu), and define onClick function
 */
-const bodyComponents = {
-  home: <Home/>,
-  a: <ContentTwitter/>,
-  b: <ContentWhatsapp/>,
-  c: <ContentInstagram/>,
-  d: <ContentReddit/>,
-  e: <ContentSnapchat/>
-};
+
 window.onload = function (){
   AnimateBg();
 }
@@ -42,6 +35,22 @@ function App() {
         slv(true);
       }
   }
+  const bodyComponents = {
+    home: <Home
+    twitter={() => {setSelected("a");loaderAlgo("a")}}
+    whatsapp={() => {setSelected("b");loaderAlgo("b")}}
+    instagram={() => {setSelected("c");loaderAlgo("c")}}
+    reddit={() => {setSelected("d");loaderAlgo("d")}}
+    snapchat={() => {setSelected("e");loaderAlgo("e")}}
+    youtube={() => {setSelected("f");loaderAlgo("f")}}
+    />,
+    a: <ContentTwitter/>,
+    b: <ContentWhatsapp/>,
+    c: <ContentInstagram/>,
+    d: <ContentReddit/>,
+    e: <ContentSnapchat/>,
+    f: <ContentYoutube/>,
+  };
   return (
     <>
       <div>{ loaderVisibility ? <LoaderVG /> : null }</div>
@@ -52,6 +61,7 @@ function App() {
       reddit={() => {setSelected("d");loaderAlgo("d")}}
       snapchat={() => {setSelected("e");loaderAlgo("e")}}
       home={() => {setSelected("home");loaderAlgo("home")}}
+      youtube={() => {setSelected("f");loaderAlgo("f")}}
       />
       {/* <ModeToggler/> */}
       <div className="grid" onLoad={ () => {MasonryInit();setTimeout(function() {slv(false)}, 1000);}}>{selected && bodyComponents[selected]}</div>

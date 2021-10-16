@@ -37,3 +37,13 @@ export default function Card(params) {
     </>
   );
 }
+
+/*-----------Buffer Template -----------
+<Card 
+    color="bg-gradient-12"
+    title=""
+    description=""
+    urlLink=""
+    logo="" 
+/>
+*/

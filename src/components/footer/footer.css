@@ -15,7 +15,18 @@
     width: 80vw;
 }
 .foo:hover{
-    opacity: 0.8;
+    opacity: 1;
+}
+.footer{
+    margin-top: 20px;
+    color:honeydew;
+    opacity: 1;
+    display: inline-block;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-bottom: 2px;
+    font-size: 20px;
+    top: 100%;
+    width: 80vw;
 }
 
 .footer-text{

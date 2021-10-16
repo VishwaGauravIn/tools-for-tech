@@ -14,7 +14,7 @@ body{
     z-index: 9999;
   }
 .new-form-shape{
-    width: 35vw;
+    width: 36vw;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -35,7 +35,7 @@ body{
         height: 20rem;
     }
     100%{
-        width: 35vw;
+        width: 36vw;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -101,7 +101,7 @@ body{
     margin-top: 4px;
     margin-left: 20px;
     color: white;
-    font-size: 30px;
+    font-size: 26px;
 }
 .form-body{
     color: whitesmoke;
@@ -166,7 +166,6 @@ body{
 .form-label{
     color: rgb(182, 182, 182);
 }
-
 /* For the sake of Responsiveness */
 @media only screen and (max-width: 600px) {
     .new-form-shape{

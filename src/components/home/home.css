@@ -5,6 +5,8 @@
     color: white;
     width: max-content;
     max-width: 100vw;
+    text-decoration: overline wavy #ff2e62f1;
+    
 }
 .home-desc{
     font-family: "Montserrat", sans-serif;
@@ -20,12 +22,92 @@
     margin-left: 4vw;
     margin-top: 10vh;
 }
-
+.home-features{
+    position: relative;
+    margin-top: 20px;
+    font-size: 32px;
+    color: white;
+    width: 58vw;
+}
+.home-feature{
+    margin-bottom: 10px;
+}
+.text-center{
+    margin-top: 20px;
+    font-size: 3.5vh;
+}
+.blockquote{
+    font-weight: 600;
+    font-size: 5vh;
+    color: #5DADE2;
+}
+.home-divider{
+    color: white;
+    max-width: 90vw;
+    margin: 0;
+}
+.adjust-svg{
+    margin-top: 7px;
+}
+.home-showdown{
+    width: max-content;
+    padding-right: 10px;
+    border-radius: 50px;
+    background-color: #ffffff2c;
+    height: 56px;
+}
+.showdown-element-text{
+    display: inline;
+    vertical-align: middle;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.showdown-element{
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 100vw;
+    margin-top: 8px;
+    margin-left: 10px;
+    vertical-align: middle;
+    overflow: hidden;
+    color: transparent;
+}
+.showdown-element:hover{
+    cursor: pointer;
+    /* width: 50px; */
+    transform: scale(1.05);
+    color: white;
+    transition: transform 100ms ease;
+}
+.showdown-element:nth-child(1){
+    background-color: #5DADE2;
+}
+.showdown-element:nth-child(2){
+    background-color: #58D68D;
+}
+.showdown-element:nth-child(3){
+    background-color: #ff2e62f1;
+}
+.showdown-element:nth-child(4){
+    background-color: #EC7063;
+}
+.showdown-element:nth-child(5){
+    background-color: #F4D03F;
+}
+.showdown-element:nth-child(6){
+    background-color: #5499C7;
+}
+.showdown-element:nth-child(7){
+    background-color: #E74C3C;
+}
 /* For the sake of Responsiveness */
 @media only screen and (max-width: 600px) {
     .home-title{
         font-size: 11.7vw;
         width: max-content;
+        /* text-decoration: none; */
     }
     .home-desc{
         font-family: "Montserrat", sans-serif;
@@ -39,5 +121,21 @@
         width: max-content;
         margin-left: 4vw;
         margin-top: 1vh;
+    }
+    .home-features{
+        position: relative;
+        margin-top: 20px;
+        font-size: 18px;
+        color: white;
+        width: 95vw;
+    }
+    .home-showdown{
+        margin-top: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .home-about{
+        margin-top: 2vh;
     }
   }
