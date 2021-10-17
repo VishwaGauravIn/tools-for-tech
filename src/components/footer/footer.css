@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -43,7 +44,66 @@
     border-style: solid;
     border-width: 2px;
 }
-
+.footer:hover {
+    cursor: pointer;
+}
+.footer-text:hover{
+    cursor: pointer;
+}
+.offcanvas {
+    background-color: #121212;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+    color: white;
+}
+.about-avatar{
+    width: 80px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.164);
+    
+}
+.about-name{
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    margin-top: 6px;
+}
+.about-social{
+    fill: rgba(255, 255, 255, 0.568);
+    display: inline-block;
+    margin-top: -26px;
+    margin-left: 10px;
+    margin-left: 10px;
+}
+.bi-github:hover{
+    fill: #F4D03F;
+}
+.bi-twitter:hover{
+    fill: #3498DB;
+}
+.tech-used-title{
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.705);
+}
+.about-tech-name{
+    border-radius: 20px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+}
+.about-tech-name:hover{
+    transform: scale(1.04);
+}
+.about-contribute{
+    border-radius: 20px;
+    margin-top: 20px;
+    border-style: solid;
+    border-color: violet;
+}
+.about-contribute:hover{
+    width: 208px;
+    transition: width 0.2s ease-in-out;
+}
 /* Animation Element - On Hold*/
 
 /* .pseudo-ele{
