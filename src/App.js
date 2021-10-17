@@ -25,13 +25,13 @@ window.onload = function (){
 }
 function MasonryInit(){
   const grid2 = document.querySelector(".grid2");
-        const masonry = new Masonry(grid2);
+    new Masonry(grid2);
 }
 function App() {
   const [selected, setSelected] = useState("home"); 
   const [loaderVisibility, slv] = useState(null)
   const loaderAlgo = (contentVal) => {
-      if (contentVal != selected){
+      if (contentVal !== selected){
         slv(true);
       }
   }

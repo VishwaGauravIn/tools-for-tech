@@ -10,7 +10,7 @@ export default function Form({ visibility, formInvisible }) {
     // Form Logic Start
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (techName != "" && toolName != ""){
+    if (techName !== "" && toolName !== ""){
       db.collection('Submitted Tools').add({
         techName:techName,
         toolName:toolName,

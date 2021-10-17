@@ -3,7 +3,6 @@ import gsap from "gsap";
                         Animation bg Start
 ````````````````````````````````````````````````````````````````*/
 export default function AnimateBg(params) {
-    {
         let canvas = document.getElementById("canvas");
         let context = canvas.getContext('2d');
         let resolution = window.devicePixelRatio || 1;
@@ -220,7 +219,6 @@ export default function AnimateBg(params) {
           canvas.style.height = vh + "px";
           
           context.scale(resolution, resolution);
-        }
         }
         
         /* ```````````````````````````````````````````````````````````````

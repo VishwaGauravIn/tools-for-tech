@@ -68,7 +68,7 @@ function Footer(){
                     <img src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white" alt="" className="about-tech-name"/>
                 </div>
                 <hr/>
-                <a href="https://paypal.me/vishwagauravin" target="_blank"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" alt="" className="about-contribute" width="200px"/></a>     
+                <a href="https://paypal.me/vishwagauravin" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" alt="" className="about-contribute" width="200px"/></a>     
             </center>
         </div>
         </div>

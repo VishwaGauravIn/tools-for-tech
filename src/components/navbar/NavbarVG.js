@@ -29,9 +29,9 @@ function NavbarVG({home,twitter,whatsapp,instagram,reddit,snapchat,youtube}) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" onClick={home}>
+                <div className="nav-link active" aria-current="page" onClick={home}>
                   Home
-                </a>
+                </div>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -49,42 +49,42 @@ function NavbarVG({home,twitter,whatsapp,instagram,reddit,snapchat,youtube}) {
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
-                    <a
+                    <div
                       className="dropdown-item dropdown-item-custom"
                       onClick={twitter}
                     >
                       Twitter
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a className="dropdown-item dropdown-item-custom" onClick={whatsapp}>
+                    <div className="dropdown-item dropdown-item-custom" onClick={whatsapp}>
                       WhatsApp
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a className="dropdown-item dropdown-item-custom" onClick={instagram}>
+                    <div className="dropdown-item dropdown-item-custom" onClick={instagram}>
                       Instagram
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a className="dropdown-item dropdown-item-custom" onClick={reddit}>
+                    <div className="dropdown-item dropdown-item-custom" onClick={reddit}>
                       Reddit
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a className="dropdown-item dropdown-item-custom" onClick={snapchat}>
+                    <div className="dropdown-item dropdown-item-custom" onClick={snapchat}>
                       Snapchat
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a className="dropdown-item dropdown-item-custom">
+                    <div className="dropdown-item dropdown-item-custom">
                       Facebook
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a className="dropdown-item dropdown-item-custom" onClick={youtube}>
+                    <div className="dropdown-item dropdown-item-custom" onClick={youtube}>
                       YouTube
-                    </a>
+                    </div>
                   </li>
                   {/* <li><hr className="dropdown-divider"/></li>
                   <li><a className="dropdown-item" href="/">Something else here</a></li> */}
