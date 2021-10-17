@@ -80,7 +80,9 @@ a{
 
 @media only screen and (max-width: 1000px) {
     .list-main{
+        position: relative;
         margin-top: 1vh;
-        margin-right: 10px;
+        margin-left: 10px;
+        float: right;
     }
   }
