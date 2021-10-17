@@ -85,9 +85,10 @@ export default function Modal({ open, onClose }) {
                     Add your fav Tool !
                   </button>
                   <br />
+                  <a href="https://github.com/VishwaGauravIn/tools-for-tech">
                   <button className="modal-body-button modal-btn-3">
                     Commit on GitHub
-                  </button>
+                  </button></a>
                   <br />
                   <a href="https://paypal.me/VishwaGauravIn">
                   <button className="modal-body-button modal-btn-4">
