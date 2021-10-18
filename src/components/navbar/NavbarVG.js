@@ -6,7 +6,7 @@ import Modal from "../modal/Modal";
 
 const spaceVal = " ";
 
-function NavbarVG({home,twitter,whatsapp,instagram,reddit,snapchat,youtube},params) {
+function NavbarVG(params) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -29,9 +29,9 @@ function NavbarVG({home,twitter,whatsapp,instagram,reddit,snapchat,youtube},para
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <div className="nav-link active" aria-current="page" onClick={home} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                <a className="nav-link active" aria-current="page" href="/">
                   Home
-                </div>
+                </a>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -49,42 +49,42 @@ function NavbarVG({home,twitter,whatsapp,instagram,reddit,snapchat,youtube},para
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
-                    <div
+                    <a
                       className="dropdown-item dropdown-item-custom"
-                      onClick={twitter} data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                      href="/twitter"
                     >
                       Twitter
-                    </div>
+                    </a>
                   </li>
                   <li>
-                    <div className="dropdown-item dropdown-item-custom" onClick={whatsapp} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                    <a className="dropdown-item dropdown-item-custom" href="/whatsapp" >
                       WhatsApp
-                    </div>
+                    </a>
                   </li>
                   <li>
-                    <div className="dropdown-item dropdown-item-custom" onClick={instagram} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                    <a className="dropdown-item dropdown-item-custom" href="/instagram" >
                       Instagram
-                    </div>
+                    </a>
                   </li>
                   <li>
-                    <div className="dropdown-item dropdown-item-custom" onClick={reddit} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                    <a className="dropdown-item dropdown-item-custom" href="/reddit" >
                       Reddit
-                    </div>
+                    </a>
                   </li>
                   <li>
-                    <div className="dropdown-item dropdown-item-custom" onClick={snapchat} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                    <a className="dropdown-item dropdown-item-custom" href="/snapchat" >
                       Snapchat
-                    </div>
+                    </a>
                   </li>
                   <li>
-                    <div className="dropdown-item dropdown-item-custom" onClick="" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                    <a className="dropdown-item dropdown-item-custom" href="/facebook" >
                       Facebook
-                    </div>
+                    </a>
                   </li>
                   <li>
-                    <div className="dropdown-item dropdown-item-custom" onClick={youtube} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                    <a className="dropdown-item dropdown-item-custom" href="/youtube" >
                       YouTube
-                    </div>
+                    </a>
                   </li>
                   {/* <li><hr className="dropdown-divider"/></li>
                   <li><a className="dropdown-item" href="/">Something else here</a></li> */}

@@ -13,6 +13,11 @@ import ContentSnapchat from "./components/content/ContentSnapchat";
 import LoaderVG from "./components/loader/LoaderVG";
 import Home from "./components/home/Home";
 import ContentYoutube from "./components/content/ContentYoutube";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 /*
 While adding any new Tech Component for ex: Twitter, Snapchat etc
@@ -27,44 +32,43 @@ function MasonryInit(){
   const grid2 = document.querySelector(".grid2");
     new Masonry(grid2);
 }
-function App() {
-  const [selected, setSelected] = useState("home"); 
+function App() { 
   const [loaderVisibility, slv] = useState(null)
-  const loaderAlgo = (contentVal) => {
-      if (contentVal !== selected){
-        slv(true);
-      }
-  }
-  const bodyComponents = {
-    home: <Home
-    twitter={() => {setSelected("a");loaderAlgo("a")}}
-    whatsapp={() => {setSelected("b");loaderAlgo("b")}}
-    instagram={() => {setSelected("c");loaderAlgo("c")}}
-    reddit={() => {setSelected("d");loaderAlgo("d")}}
-    snapchat={() => {setSelected("e");loaderAlgo("e")}}
-    youtube={() => {setSelected("f");loaderAlgo("f")}}
-    />,
-    a: <ContentTwitter/>,
-    b: <ContentWhatsapp/>,
-    c: <ContentInstagram/>,
-    d: <ContentReddit/>,
-    e: <ContentSnapchat/>,
-    f: <ContentYoutube/>,
-  };
   return (
     <>
       <div>{ loaderVisibility ? <LoaderVG /> : null }</div>
-      <NavBarVG 
-      twitter={() => {setSelected("a");loaderAlgo("a")}}
-      whatsapp={() => {setSelected("b");loaderAlgo("b")}}
-      instagram={() => {setSelected("c");loaderAlgo("c")}}
-      reddit={() => {setSelected("d");loaderAlgo("d")}}
-      snapchat={() => {setSelected("e");loaderAlgo("e")}}
-      home={() => {setSelected("home");loaderAlgo("home")}}
-      youtube={() => {setSelected("f");loaderAlgo("f")}}
-      />
+      <NavBarVG/>
       {/* <ModeToggler/> */}
-      <div className="grid" onLoad={ () => {MasonryInit();setTimeout(function() {slv(false)}, 1000);}}>{selected && bodyComponents[selected]}</div>
+      <div className="grid" onLoad={ () => {MasonryInit();setTimeout(function() {slv(false)}, 1000);}}>
+      <Router>
+        <Switch>
+      <Route path="/twitter">
+            <ContentTwitter />
+      </Route>
+      <Route path="/whatsapp">
+            <ContentWhatsapp />
+      </Route>
+      <Route path="/instagram">
+            <ContentInstagram />
+      </Route>
+      <Route path="/reddit">
+            <ContentReddit />
+      </Route>
+      <Route path="/snapchat">
+            <ContentSnapchat />
+      </Route>
+      <Route path="/facebook">
+            {/* <ContentFacebook /> */}
+      </Route>
+      <Route path="/youtube">
+            <ContentYoutube />
+      </Route>
+      <Route path="/">
+            <Home />
+      </Route>
+      </Switch>
+      </Router>
+      </div>
       <Footer />
       <canvas id="canvas"></canvas>
     </>
