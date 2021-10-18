@@ -22,7 +22,6 @@ body{
     color: white;
     border-radius: 3vh;
     width: 17rem;
-
 }
 /* creating zoom effect on mouse hover */
 .card:hover{
