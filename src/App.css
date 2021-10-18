@@ -26,6 +26,7 @@ body{
 /* creating zoom effect on mouse hover */
 .card:hover{
   transform: scale(1.01);
+  cursor: pointer;
 }  
 
 .main{

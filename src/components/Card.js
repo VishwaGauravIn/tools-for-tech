@@ -1,6 +1,8 @@
 // Copyright github.com/VishwaGauravIn - Reuse Allowed
 
 import React from "react";
+import { db } from "./modal/form/firebase";
+import firebase from '@firebase/app-compat';
 /*
 required Params-
 color:
@@ -14,10 +16,19 @@ This card component needs Bootstrap css, App.css and colors.css to work properly
 */
 
 export default function Card(params) {
+  
+  const increment = firebase.firestore.FieldValue.increment(1);
+  const ToolName = params.title
+  const ToolClickVal = db.collection('ToolsAnalytics').doc('Tools');
+  const clickFun = () => {
+    ToolClickVal.update({ [ToolName]:increment })
+    window.open(params.urlLink,"_blank")
+  }
   return (
     <>
-      <div className="main grid-item">
-        <a href={params.urlLink} className="urlLinkCard">
+      <div className="main grid-item" onClick={clickFun}>
+        <a href={clickFun} className="urlLinkCard">
+          {/* {params.urlLink} */}
           <div className="card">
             <div className={params.color}>
               <div className="card-body">
