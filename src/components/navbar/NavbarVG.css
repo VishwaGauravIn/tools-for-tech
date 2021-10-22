@@ -52,3 +52,20 @@
 .nav-link:hover{
   cursor: pointer;
 }
+.btn-lst-tech{
+  margin: 0;
+  padding: 0;
+  display: block;
+  background-color: transparent;
+  color: white;
+  font-size: 32px;
+  border-style: hidden;
+}
+.bi-search{
+  margin-top: -10px;
+}
+.offcanvas-bottom{
+  height: max-content;
+  background-color: transparent;
+  border-style: hidden;
+}

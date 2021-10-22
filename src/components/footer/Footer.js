@@ -32,7 +32,7 @@ function Footer(){
             </div>
             {/* <div className="pseudo-ele">{pseudoText2}</div> */}
         </center>
-        <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div className="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div className="offcanvas-header">
             <h5 id="offcanvasRightLabel">About Section:</h5>
             <button type="button" className="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
