@@ -3,7 +3,6 @@ import "./NavbarVG.css";
 import { useState } from "react";
 import Modal from "../modal/Modal";
 import Button from "./Button";
-// Not creating NavBar from Scratch because it will use js for dropdown and relative sizing of desired contents which I need to create from scratch (almost self made)
 
 const spaceVal = " ";
 
@@ -13,21 +12,8 @@ function NavbarVG(params) {
     <>
       <nav className="navbar sticky-top navbar-expand-lg navbar-dark navbar-custom-props">
         <div className="container-fluid">
+          {/* test */}
           <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              {/* test */}
-              <button
                 className="btn-lst-tech"
                 type="button"
                 data-bs-toggle="offcanvas"
@@ -47,6 +33,19 @@ function NavbarVG(params) {
                 {spaceVal} Find Tools
               </button>
               {/* test */}
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             </ul>
             <button
               className="btn btn-success btn-success-custom"
