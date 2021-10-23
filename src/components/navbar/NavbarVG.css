@@ -61,8 +61,12 @@
   font-size: 32px;
   border-style: hidden;
 }
+.btn-lst-tech:hover .bi-search{
+  transform: scale(1.2);
+}
 .bi-search{
   margin-top: -10px;
+  transition: transform 0.2s ease-in;
 }
 .offcanvas-bottom{
   height: max-content;

@@ -44,13 +44,13 @@ export default function Form({ visibility, formInvisible }) {
         <div className="new-form-shape">
           <div className="close-circle red" onClick={formInvisible}>
             {" "}
-            <center>Close</center>
+            <center><strong>X</strong></center>
           </div>
           <div className="close-circle green" />
           <div className="close-circle yellow" />
           <h2 className="form-title appear-late">Add Your favourite tool:</h2>
           <div className="form-body appear-late">
-            <hr className="form-hr"/>
+            <div className="form-content">
             <center>
               <h5 className="form-label">Tech Name:</h5>
               <input
@@ -80,7 +80,7 @@ export default function Form({ visibility, formInvisible }) {
               <br />
               <button type="submit" className="form-submit-btn">Submit</button>  
             </center>
-          </div>
+          </div></div>
         </div>
         </form>
       </div>

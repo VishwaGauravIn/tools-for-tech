@@ -15,33 +15,37 @@ body{
   }
 .new-form-shape{
     width: 36vw;
+    height: max-content;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
     z-index: 3;
-    background-color: #222831;
+    background-color: #141414;
     border-radius: 20px;
     border-style: hidden;
-    border-color: #4e5d72;
+    border-color: #14141409;
     border-width: 0.25rem;
-    animation: newShapeAppear 1s;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.431);
+    /* transition: width 1s ease-in; */
+    animation: newShapeAppear 0.4s;
+    -webkit-box-shadow: -5px 10px 40px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -5px 10px 40px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: -5px 10px 40px 10px rgba(0, 0, 0, 0.3)
 }
 @keyframes newShapeAppear {
     0%{
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-        width: 20rem;
-        height: 20rem;
+        width: 0rem;
+        height: 0rem;
     }
     100%{
         width: 36vw;
+        height: 68vh;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         position: absolute;
         z-index: 3;
-        background-color: #222831;
+        background-color: #202020;
         border-radius: 20px;
     }
 }
@@ -57,7 +61,7 @@ body{
     }
 }
 .appear-late{
-    animation: appearLate 1s;
+    animation: appearLate 0.3s;
 }
 .close-circle{
     width: 18px;
@@ -66,29 +70,20 @@ body{
     float: right;
     margin-top: 12px;
     margin-right: 8px;
-    animation: appearLate 1s;
+    animation: appearLate 0.3s;
 }
 .red{
     background-color: rgb(255, 61, 61);
-    color: transparent;
+    color: #ffffff8e;
     display: inline;
-    font-size: 12px;
+    font-size: 0px;
     vertical-align: middle;
     font-family: "Montserrat", sans-serif;
+    transition: width 0.3s ease-in;
 }
 .red:hover{
-    animation: redBtn 0.3s;
-    width: 50px;
-    color: #FBDCC4;
+    font-size: 12px;
     cursor:pointer;
-}
-@keyframes redBtn {
-    0%{
-        width: 18px;
-    }
-    100%{
-        width: 50px;
-    }
 }
 .green{
     background-color: rgb(124, 207, 0);
@@ -107,12 +102,21 @@ body{
     color: whitesmoke;
     margin-top: -15px;
 }
+.form-content{
+    background-color: #202020;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* min-height: max-content; */
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 .form-input{
     width: 38vh;
     margin-bottom: 10px;
     height: 6vh;
     border-radius: 20px;
-    background: #4e5d72;
+    background: #3a3a3a;
     border-color: white;
     text-align: center;
     color: #EEEEEE;
@@ -120,15 +124,13 @@ body{
     padding-left: 8px;
     padding-right: 8px;
     border-style: solid;
-    box-shadow: 0px 0px 30px #000;
+    box-shadow: 0px 0px 10px #000;
     outline: transparent;
 }
 
 .form-input:focus{
-    width: 40vh;
-    border-style: hidden;
-    box-shadow: 0 0 0 4px white;
-    transform: scale(1.01);
+    width: 42vh;
+    /* transform: scale(1.01); */
 }
 .form-input-description{
     height: 18vh;
@@ -137,6 +139,11 @@ body{
     max-height: 18vh;
     min-height: 18vh;
     overflow: hidden;
+    resize: none;
+}
+.form-input-description:focus{
+    border-style: hidden;
+    box-shadow: 0 0 0 2px white;
 }
 .form-submit-btn{
     display: block;
@@ -150,7 +157,7 @@ body{
     border-radius: 20px;
     border-style: solid;
     border-color: #e8bd70;
-    box-shadow: 0px 0px 30px #000;
+    box-shadow: 0px 0px 10px #000;
 }
 .form-submit-btn:hover{
     color: #222831;
@@ -165,6 +172,15 @@ body{
 }
 .form-label{
     color: rgb(182, 182, 182);
+    background-color: #3a3a3a88;
+    width: max-content;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    margin-bottom: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 /* For the sake of Responsiveness */
 @media only screen and (max-width: 600px) {
@@ -175,19 +191,16 @@ body{
         transform: translate(-50%, -50%);
         position: absolute;
         z-index: 3;
-        background-color: #222831;
         border-radius: 20px;
         border-style: hidden;
         border-color: #4e5d72;
         border-width: 0.25rem;
-        animation: newShapeAppear 1s;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.431);
+        animation: newShapeAppear 0.29s;
     }
     @keyframes newShapeAppear {
         0%{
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-            width: 20rem;
-            height: 20rem;
+            width: 0rem;
+            height: 0rem;
         }
         100%{
             width: 80vw;
@@ -196,7 +209,6 @@ body{
             transform: translate(-50%, -50%);
             position: absolute;
             z-index: 3;
-            background-color: #222831;
             border-radius: 20px;
         }
     }

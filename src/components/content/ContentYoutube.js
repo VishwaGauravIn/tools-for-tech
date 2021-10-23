@@ -59,13 +59,6 @@ export default function ContentYoutube(params) {
             urlLink="https://newpipe.net/"
             logo="https://newpipe.net/img/logo.svg" 
         />
-        <Card 
-            color="bg-gradient-12"
-            title=""
-            description=""
-            urlLink=""
-            logo="" 
-        />
         </div>
         </div>
         </>

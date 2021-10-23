@@ -1,5 +1,4 @@
 /* FREE TO USE ~~ github.com/VishwaGauravIn */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
 .btnoff {
     position: relative;
     display: inline-flex;
@@ -21,30 +20,12 @@
     background-color: #000;
     border-color: #000;
   }
-  
-  .text {
-    font-size: 0;
-    font-weight: bold;
-    display: inline-block;
-    opacity: 0;
-    color: #fff;
-    visibility: hidden;
-    transition: font-size 0.3s ease, opacity 0.5s ease;
-  }
-  
-  .btnoff:hover .text {
-    opacity: 1;
-    font-size: 18px;
-    visibility: visible;
-    padding-inline: 16px;
-  }
-  
   .icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 32px;
-    height: 36px;
+    height: 32px;
     border-radius: 50%;
     transition: background-color 0.25s ease;
   }
@@ -59,7 +40,7 @@
     transition: transform 0.5s ease;
   }
   .btnoff:hover .icon svg {
-    transform: scale(0.5);
+    transform: scale(0.7);
     fill: #3671e9;
   }
   

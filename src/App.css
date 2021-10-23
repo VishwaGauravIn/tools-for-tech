@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 .bg-color-purple{
   background-color: #330867;
 }
@@ -28,7 +27,10 @@ body{
   transform: scale(1.01);
   cursor: pointer;
 }  
-
+.card-body{
+  background-color: rgba(0,0,0, 0.1);
+  border-radius: 20px;
+}
 .main{
   margin-top: 0px;
   margin-bottom: 0px;
@@ -69,10 +71,14 @@ body{
   height: 50px;
 }
 .card-image:hover{
-  border-width: 0px;
   image-resolution: 54px 54px;
 }
-
+.card-title{
+  font-family: 'Montserrat', sans-serif;
+}
+.card-text{
+  color: rgba(255, 255, 255, 0.87);
+}
 #canvas {
   position: fixed;
   top: 0;

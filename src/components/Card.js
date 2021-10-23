@@ -24,6 +24,8 @@ export default function Card(params) {
     ToolClickVal.update({ [ToolName]:increment })
     window.open(params.urlLink,"_blank")
   }
+  // const randomNum = Math.floor(Math.random() * (10 - 1) + 1); // generate random number from 10 to 1
+  // const color = "bg-gradient-"+ Math.floor(Math.random() * (13 - 1 + 1) + 1);
   return (
     <>
       <div className="main grid-item" onClick={clickFun}>
@@ -38,8 +40,9 @@ export default function Card(params) {
                   className="card-image"
                   width="50px"
                 />
-                <h5 className="card-title">{params.title}</h5>
+                <h5 className="card-title"><strong>{params.title}</strong></h5>
                 <p className="card-text">{params.description}</p>
+                {/* <button class="btn btn-primary">Check it out</button> */}
               </div>
             </div>
           </div>

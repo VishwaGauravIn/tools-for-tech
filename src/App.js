@@ -13,17 +13,14 @@ import ContentSnapchat from "./components/content/ContentSnapchat";
 import LoaderVG from "./components/loader/LoaderVG";
 import Home from "./components/home/Home";
 import ContentYoutube from "./components/content/ContentYoutube";
+import ContentFacebook from "./components/content/ContentFacebook"
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
 
-/*
-While adding any new Tech Component for ex: Twitter, Snapchat etc
-in App.js > define bodyComponent, pass it's value in NavBarVG
-in NavBarVG > add Navigation bar Dropdown (for ex: add Snapchat in dropdown menu), and define onClick function
-*/
+import CardVG from './components/card-resdesigned/CardVG'
 
 window.onload = function (){
   AnimateBg();
@@ -36,10 +33,11 @@ function App() {
   const [loaderVisibility, slv] = useState(null)
   return (
     <>
+    <CardVG/>
       <div>{ loaderVisibility ? <LoaderVG /> : null }</div>
       <NavBarVG/>
       {/* <ModeToggler/> */}
-      <div className="grid" onLoad={ () => {MasonryInit();setTimeout(function() {slv(false)}, 1000);}}>
+      <div className="grid" onLoad={ () => {MasonryInit();setTimeout(function() {slv(false)}, 0);}}>
       <Router>
         <Switch>
       <Route path="/twitter">
@@ -58,7 +56,7 @@ function App() {
             <ContentSnapchat />
       </Route>
       <Route path="/facebook">
-            {/* <ContentFacebook /> */}
+            <ContentFacebook />
       </Route>
       <Route path="/youtube">
             <ContentYoutube />
