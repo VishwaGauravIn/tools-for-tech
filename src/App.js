@@ -20,7 +20,6 @@ import {
   Route,
 } from "react-router-dom";
 
-import CardVG from './components/card-resdesigned/CardVG'
 
 window.onload = function (){
   AnimateBg();
@@ -33,7 +32,6 @@ function App() {
   const [loaderVisibility, slv] = useState(null)
   return (
     <>
-    <CardVG/>
       <div>{ loaderVisibility ? <LoaderVG /> : null }</div>
       <NavBarVG/>
       {/* <ModeToggler/> */}
