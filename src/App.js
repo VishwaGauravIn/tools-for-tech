@@ -32,41 +32,26 @@ function App() {
   const [loaderVisibility, slv] = useState(null)
   return (
     <>
+      <Router>
       <div>{ loaderVisibility ? <LoaderVG /> : null }</div>
       <NavBarVG/>
       {/* <ModeToggler/> */}
       <div className="grid" onLoad={ () => {MasonryInit();setTimeout(function() {slv(false)}, 0);}}>
-      <Router>
-        <Switch>
-      <Route path="/twitter">
-            <ContentTwitter />
-      </Route>
-      <Route path="/whatsapp">
-            <ContentWhatsapp />
-      </Route>
-      <Route path="/instagram">
-            <ContentInstagram />
-      </Route>
-      <Route path="/reddit">
-            <ContentReddit />
-      </Route>
-      <Route path="/snapchat">
-            <ContentSnapchat />
-      </Route>
-      <Route path="/facebook">
-            <ContentFacebook />
-      </Route>
-      <Route path="/youtube">
-            <ContentYoutube />
-      </Route>
-      <Route path="/">
-            <Home />
-      </Route>
+      <Switch>
+      <Route path='/twitter' component={ContentTwitter} />
+      <Route path='/whatsapp' component={ContentWhatsapp} />
+      <Route path='/instagram' component={ContentInstagram} />
+      <Route path='/reddit' component={ContentReddit} />
+      <Route path='/snapchat' component={ContentSnapchat} />
+      <Route path='/facebook' component={ContentFacebook} />
+      <Route path='/youtube' component={ContentYoutube} />
+      <Route path='/home' component={Home} />
+      <Route component={Home} />
       </Switch>
-      </Router>
       </div>
       <Footer />
       <canvas id="canvas"></canvas>
+      </Router>
     </>
   );
 }
