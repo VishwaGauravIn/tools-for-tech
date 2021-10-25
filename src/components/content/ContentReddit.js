@@ -31,7 +31,7 @@ export default function ContentReddit(params) {
         <Card 
             color="bg-gradient-12"
             title="Wallpaper Changer for Reddit"
-            description="Your lockscreen and homescreen deserve some variety. This app uses pictures from Reddit to provide an unlimited source of high resolution wallpapers based on your favorite subreddits and categories. The app runs in the background and manages your wallpapers for you. With custom schedules from hourly to daily, you can have an automatic slideshow on your homescreen or lockscreen. The settings are heavily customizable, with tons of options such as post filtering, rank sorting, image effects, and preset categories"
+            description="Your lockscreen and homescreen deserve some variety. This app uses pictures from Reddit to provide an unlimited source of high resolution wallpapers based on your favorite subreddits and categories. "
             urlLink="https://play.google.com/store/apps/details?id=com.bryanwalsh.redditwallpaper2"
             logo="https://play-lh.googleusercontent.com/Ea8usQOYsWN2_igG9IZ9sCSqctTJlqiOP4Qe8EjT6QqdcUuAeDb97L1MN4Q9oafxRQ=s180-rw"
         />
