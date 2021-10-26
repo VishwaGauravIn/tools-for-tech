@@ -32,10 +32,28 @@ export default function ContentYoutube(params) {
         />
 
         <Card
-            title=""
-            description=""
-            urlLink=""
-            logo="" 
+            title="Quotes Cover FB"
+            description="Quick, easy, fast and free Facebook cover photo maker. You can add annotation, stickers, and make the Facebook cover seamlessly integrated with your profile picture."
+            urlLink="https://quotescover.com/tools/facebook-cover-photo-maker"
+            logo="https://quotescover.com/favicon.ico?cbv=3" 
+        />
+        <Card
+            title="upRive"
+            description="Create High-Performing Facebook ads in Minutes."
+            urlLink="https://uprive.com/"
+            logo="https://uprive.com/favicon.ico" 
+        />
+        <Card
+            title="WP Chatbot"
+            description="Install Facebook Messenger Chat on WordPress with WP-Chatbot — in One Click!"
+            urlLink="https://mobilemonkey.com/wp-chatbot/"
+            logo="https://mobilemonkey.com/wp-content/uploads/2019/03/logo-head.png" 
+        />
+        <Card
+            title="Canva"
+            description="All in One Designing Tool. Create Posts, Banners, Videos, Presentations and many more !"
+            urlLink="https://www.canva.com/"
+            logo="https://static.canva.com/static/images/apple-touch-120x120-1.png" 
         />
         </div>
         </div>

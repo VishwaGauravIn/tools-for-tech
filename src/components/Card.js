@@ -53,8 +53,7 @@ export default function Card(params) {
 }
 
 /*-----------Buffer Template -----------
-<Card 
-    color="bg-gradient-12"
+<Card
     title=""
     description=""
     urlLink=""

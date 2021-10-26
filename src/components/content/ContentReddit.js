@@ -15,7 +15,7 @@ export default function ContentReddit(params) {
         />
         <Card 
             title="Viddit"
-            description="Viddit offers a quick and easy way to download videos from Reddit. Viddit will download videos from Reddit with audio. Features: Easily download videos with audio from Reddit. Share the videos to any app directly from the Viddit app. Access all your downloaded videos right inside the app. Play downloaded videos right from the app."
+            description="Viddit offers a quick and easy way to download videos from Reddit. Viddit will download videos from Reddit with audio."
             urlLink="https://play.google.com/store/apps/details?id=aculix.viddit.downloader"
             logo="https://play-lh.googleusercontent.com/8bxhG087U3uW-30ea01ZIC5pmDnzTFebYNRWWVkCbYOMJjOdzNW28PEvGTxhzR5gzyw=s180-rw"
         />

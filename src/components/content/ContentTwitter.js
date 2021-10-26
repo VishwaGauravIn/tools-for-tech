@@ -61,6 +61,12 @@ export default function ContentTwitter(params) {
           logo="https://epicjobs.co/wp/wp-content/themes/epicjobs/images/favicon.png"
         ></Card>
         <Card
+            title="Canva"
+            description="All in One Designing Tool. Create Posts, Banners, Videos, Presentations and many more !"
+            urlLink="https://www.canva.com/"
+            logo="https://static.canva.com/static/images/apple-touch-120x120-1.png" 
+        />
+        <Card
           title="Typefully"
           description="Typefully is a distraction-free editor to write and publish condensed ideas. See a live-preview of your thread while you write it, save multiple drafts, schedule, and publish in a focused environment."
           urlLink="https://typefully.app/"

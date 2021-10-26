@@ -8,7 +8,7 @@ export default function Button(params) {
   return (
     <>
       <Link to={params.url}>
-        <button className="btnoff" data-bs-toggle="tooltip" data-bs-placement="top" title={params.name}>
+        <button className="btnoff" data-bs-toggle="tooltip" data-bs-placement="top" title={params.name} data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
            <span className="icon">{params.svg} </span>
       </button>
       </Link>
