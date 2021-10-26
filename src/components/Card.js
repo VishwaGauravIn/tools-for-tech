@@ -25,14 +25,14 @@ export default function Card(params) {
     window.open(params.urlLink,"_blank")
   }
   // const randomNum = Math.floor(Math.random() * (10 - 1) + 1); // generate random number from 10 to 1
-  // const color = "bg-gradient-"+ Math.floor(Math.random() * (13 - 1 + 1) + 1);
+  const color = "bg-gradient-"+ Math.floor(Math.random() * (13 - 1 + 1) + 1);
   return (
     <>
       <div className="main grid-item ani-appear" onClick={clickFun}>
         <a href={clickFun} className="urlLinkCard">
           {/* {params.urlLink} */}
           <div className="card">
-            <div className={params.color}>
+            <div className={color}>
               <div className="card-body">
                 <img
                   src={params.logo}
