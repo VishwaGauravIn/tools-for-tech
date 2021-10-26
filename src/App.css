@@ -86,7 +86,6 @@ body{
   z-index: -1;
   opacity: 0.3;
 }
-
 /* For the sake of Responsiveness */
 @media only screen and (max-width: 600px) {
   .big-box{
@@ -106,5 +105,20 @@ body{
     margin-left: 0px;
     margin-right: 0px;
     width: 17rem; /*17rem*/
+  }
+}
+
+
+/* Regressive animation zone */
+.ani-appear{
+  animation: appear 0.8s;
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }

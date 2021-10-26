@@ -2,22 +2,28 @@ import React, { useState } from "react";
 import "./form.css";
 import '../modal.css'
 import { db } from "./firebase"
+import LoaderVG from "../../loader/LoaderVG";
+import FormModal from "./FormModal/FormModal";
+
 export default function Form({ visibility, formInvisible }) {
+  const [isModalVisible, setIsModalVisible] = useState(false)
+  const [isLoaderVisible, setIsLoaderVisible] = useState(false)
   const [techName,setTechName] = useState("");
   const [toolName,setToolName] = useState("");
   const [description,setDescription] = useState("");
-
     // Form Logic Start
   const handleSubmit = (e) => {
     e.preventDefault();
     if (techName !== "" && toolName !== ""){
+      setIsLoaderVisible(true)
       db.collection('Submitted Tools').add({
         techName:techName,
         toolName:toolName,
         description:description,
       })
       .then(() => {
-        alert('Thanks for submitting your Favourite Tool !')
+        
+        setIsModalVisible(true)
       })
       .catch((error) => {
         alert(error.message);
@@ -39,6 +45,8 @@ export default function Form({ visibility, formInvisible }) {
   if (!visibility) return null;
   return (
     <>
+    {isLoaderVisible ? <LoaderVG/> :null}
+    {isModalVisible ? <FormModal setIsModalVisible={() => {setIsModalVisible(false);setIsLoaderVisible(false)}}/> :null}
       <div className="fullscreen-form">
         <form id="form" onSubmit={handleSubmit}>
         <div className="new-form-shape">
@@ -87,3 +95,4 @@ export default function Form({ visibility, formInvisible }) {
     </>
   );
 }
+

@@ -28,7 +28,7 @@ export default function Card(params) {
   // const color = "bg-gradient-"+ Math.floor(Math.random() * (13 - 1 + 1) + 1);
   return (
     <>
-      <div className="main grid-item" onClick={clickFun}>
+      <div className="main grid-item ani-appear" onClick={clickFun}>
         <a href={clickFun} className="urlLinkCard">
           {/* {params.urlLink} */}
           <div className="card">
