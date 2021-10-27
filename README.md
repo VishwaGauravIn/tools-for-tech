@@ -1,71 +1,54 @@
-# Development in Progress
-# Getting Started with Create React App
+<div align="center">
+ <h1> <img src="https://tft.vercel.app/logo192.png" width="22px"> Tools for Tech <img src="https://tft.vercel.app/logo192.png" width="22px"></h1>
+ <img src="https://img.shields.io/github/package-json/v/VishwaGauravIn/tools-for-tech?color=g&label=Tools%20for%20Tech&style=plastic">
+ <a href="https://paypal.me/vishwagauravin"><img src="https://img.shields.io/badge/sponsor-30363D?style=plastic&logo=GitHub-Sponsors&logoColor=#EA4AAA"></img></a>
+ <img src="https://img.shields.io/npm/v/npm?style=plastic">
+ <img src="https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Ftft.vercel.app&style=plastic">
+ <img src="https://img.shields.io/website?style=plastic&url=https%3A%2F%2Ftft.vercel.app"> 
+ <img src="https://img.shields.io/github/deployments/VishwaGauravIn/tools-for-tech/production?label=Deployment&style=plastic">
+ <img src="https://img.shields.io/github/languages/code-size/VishwaGauravIn/tools-for-tech?logo=github&style=plastic">
+ <!-- <img src="https://img.shields.io/github/sponsors/VishwaGauravIn?style=plastic"> -->
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# About
+<h3>One Stop Solution to Every Social-Media Problem.</h3>
 
-## Available Scripts
+**We Help You to Find Best Tools that:**
+- 🏆 **Make you Stand Out from Crowd**
+- 🕑 **Save Your Precious Time**
+- ⚡ **Increase Your Productivity**
+- 🖌️ **Design like Never-Before**
+- 😄 **Make your life Easier**
 
-In the project directory, you can run:
+### Website is Live : [tft.vercel.app](https://tft.vercel.app) ( Development in Progress 🚧 )
 
-### `npm start`
+# Tech Used
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Contribute 
+**If you are Using NPM then:**
+- **Step 1:** Fork and Download the Repository
+- **Step 2:** Open it in editor like VSCode
+- **Step 3:** Open Terminal inside it and run ``` npm install``` to install required dependencies (you can apply '--force' after command and then run it , incase you face any error)
+- **Step 4:** Run ```npm start``` to launch the website on 'localhost:3000' and check if it is working without any error.
+- **Step 5:** Do your Changes and make sure that you don't get any error or warning.
+- **Step 6:** Push on github and Create a Pull Request 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Stuck? Search your issue/error on Google** 
 
-### `npm test`
+In Case you are not from Coding Background but still want to Contribute then You can add your favourite tool/app by filling form in contribution section of our [website](https://tft.vercel.app)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Or You can [SPONSOR](https://paypal.me/vishwagauravin) us**
 
-### `npm run build`
+# PageSpeed Insights
+<img src="https://raw.githubusercontent.com/VishwaGauravIn/Images/a5da6208166c870804fcb45f536b4d26ee22a756/tft-pagespeed.svg">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Screensorts
+   <img src="https://raw.githubusercontent.com/VishwaGauravIn/Images/main/Tools%20for%20Tech.jpeg">
+   <img src="https://github.com/VishwaGauravIn/Images/blob/main/tft-vercel-app-1024xFULLdesktop-547b93.jpg?raw=true" >
