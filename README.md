@@ -22,6 +22,13 @@
 
 ### Website is Live : [tft.vercel.app](https://tft.vercel.app) ( Development in Progress 🚧 )
 
+# Screensorts
+   <img src="https://raw.githubusercontent.com/VishwaGauravIn/Images/main/Tools%20for%20Tech.jpeg">
+   <img src="https://github.com/VishwaGauravIn/Images/blob/main/tft-vercel-app-1024xFULLdesktop-547b93.jpg?raw=true" >
+
+# PageSpeed Insights
+<img src="https://raw.githubusercontent.com/VishwaGauravIn/Images/a5da6208166c870804fcb45f536b4d26ee22a756/tft-pagespeed.svg">
+
 # Tech Used
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -49,9 +56,3 @@ In Case you are not from Coding Background but still want to Contribute then You
 ### [Play With Code](https://codesandbox.io/s/github/VishwaGauravIn/tools-for-tech) 
 [![CodeSandbox](https://img.shields.io/badge/Codesandbox-040404?style=for-the-badge&logo=codesandbox&logoColor=DBDBDB)](https://codesandbox.io/s/github/VishwaGauravIn/tools-for-tech)
 [![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://github.dev/VishwaGauravIn/tools-for-tech)
-# PageSpeed Insights
-<img src="https://raw.githubusercontent.com/VishwaGauravIn/Images/a5da6208166c870804fcb45f536b4d26ee22a756/tft-pagespeed.svg">
-
-# Screensorts
-   <img src="https://raw.githubusercontent.com/VishwaGauravIn/Images/main/Tools%20for%20Tech.jpeg">
-   <img src="https://github.com/VishwaGauravIn/Images/blob/main/tft-vercel-app-1024xFULLdesktop-547b93.jpg?raw=true" >
