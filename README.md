@@ -20,7 +20,7 @@
 - 🖌️ **Design like Never-Before**
 - 😄 **Make your life Easier**
 
-### Website is Live : [tft.vercel.app](https://tft.vercel.app) ( Development in Progress 🚧 )
+### Website is Live : [tft.vercel.app](https://tft.vercel.app)
 
 # Screensorts
    <img src="https://raw.githubusercontent.com/VishwaGauravIn/Images/main/Tools%20for%20Tech.jpeg">
