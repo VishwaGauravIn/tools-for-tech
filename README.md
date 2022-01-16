@@ -1,5 +1,5 @@
 <div align="center">
- <h1> <img src="https://tft.vercel.app/logo192.png" width="22px"> Tools for Tech <img src="https://tft.itsvg.in/logo.png" width="22px"></h1>
+ <h1> <img src="https://tft.itsvg.in/logo.png" width="22px"> Tools for Tech <img src="https://tft.itsvg.in/logo.png" width="22px"></h1>
  <img src="https://img.shields.io/github/package-json/v/VishwaGauravIn/tools-for-tech?color=g&label=Tools%20for%20Tech&style=plastic">
  <a href="https://paypal.me/vishwagauravin"><img src="https://img.shields.io/badge/sponsor-30363D?style=plastic&logo=GitHub-Sponsors&logoColor=#EA4AAA"></img></a>
  <img src="https://img.shields.io/npm/v/npm?style=plastic">
