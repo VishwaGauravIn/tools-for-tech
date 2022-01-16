@@ -1,11 +1,11 @@
 <div align="center">
- <h1> <img src="https://tft.vercel.app/logo192.png" width="22px"> Tools for Tech <img src="https://tft.vercel.app/logo192.png" width="22px"></h1>
+ <h1> <img src="https://tft.vercel.app/logo192.png" width="22px"> Tools for Tech <img src="https://tft.itsvg.in/logo.png" width="22px"></h1>
  <img src="https://img.shields.io/github/package-json/v/VishwaGauravIn/tools-for-tech?color=g&label=Tools%20for%20Tech&style=plastic">
  <a href="https://paypal.me/vishwagauravin"><img src="https://img.shields.io/badge/sponsor-30363D?style=plastic&logo=GitHub-Sponsors&logoColor=#EA4AAA"></img></a>
  <img src="https://img.shields.io/npm/v/npm?style=plastic">
- <img src="https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Ftft.vercel.app&style=plastic">
- <img src="https://img.shields.io/website?style=plastic&url=https%3A%2F%2Ftft.vercel.app"> 
- <img src="https://img.shields.io/github/deployments/VishwaGauravIn/tools-for-tech/production?label=Deployment&style=plastic">
+ <img src="https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Ftft.itsvg.in&style=plastic">
+ <img src="https://img.shields.io/website?style=plastic&url=https%3A%2F%2Ftft.itsvg.in"> 
+ <img src="https://img.shields.io/github/deployments/VishwaGauravIn/tools-for-tech/production?label=Production&style=plastic">
  <img src="https://img.shields.io/github/languages/code-size/VishwaGauravIn/tools-for-tech?logo=github&style=plastic">
  <!-- <img src="https://img.shields.io/github/sponsors/VishwaGauravIn?style=plastic"> -->
 </div>
