@@ -84,7 +84,6 @@ export default function ContentTwitter(params) {
           urlLink="https://ritetag.com/"
           logo="https://cdn.ritekit.com/assets/img/ritetag/apple-icon-72x72.png"
         ></Card>
-        logo=""
       </div>
     </div>
   );
